@@ -1,7 +1,7 @@
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
-
+//Benjamin Wagley and Will Hu
 public class Cat {
 	// drawing constants are private - noone needs to know what we're doing
 	// pick a head dimension
@@ -27,17 +27,17 @@ public class Cat {
 		int x=catX;
 		int y=catY;
 		// Draw the head
-		g2.setColor(Color.yellow);
+		g2.setColor(Color.black);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
-		g2.setColor(Color.red); //Change here
+		g2.setColor(Color.green); //Change here
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Draw the mouth
-		g2.setColor(Color.black); //Change here
+		g2.setColor(Color.pink); //Change here
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
